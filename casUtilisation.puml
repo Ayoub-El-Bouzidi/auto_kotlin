@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor "autheur" as a
+actor "User" as u
+rectangle Blog {
+  usecase "CRUD Articl" as UC1
+  usecase "CRUD Category" as UC2
+  usecase "Read Articl" as UC3
+}
+a --> UC1
+a --> UC2
+u --> UC3
+@enduml
